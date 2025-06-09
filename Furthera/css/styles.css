@@ -1375,6 +1375,521 @@ a:hover {
   }
 }
 
+#jointheTeam {
+  /* background: url('C:/Users/gaowe/OneDrive/Desktop/CEO App/gaowelwe/Furthera/images/person_1.png') no-repeat center center;*/
+  background-size: cover;
+  padding: 60px 0;
+  color: white; /* Adjust text color for readability */
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -0.5px;
+  text-align: center;
+  position: relative; /* For overlay positioning */
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 80px 20px;
+  width: 100%;
+  font-weight: 400;
+}
+
+/* Optional: Overlay for better readability */
+#jointheTeam::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+  border-radius: 10px; /* Match the section's border radius */
+  box-sizing: border-box;
+  padding: 80px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 400;
+  transition: background 0.3s ease;
+  /* Smooth transition for overlay */
+  z-index: -1; /* Ensure overlay is behind content */
+  border-radius: 10px; /* Match the section's border radius */
+  box-sizing: border-box;
+  padding: 80px 20px;
+  
+}
+
+
+/* Heading */
+#jointheTeam .heading h2 {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#jointheTeam .heading p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Text */
+#jointheTeam p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  font-weight: 400;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+#jointheTeam .heading {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -0.5px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: 600;
+  
+
+}
+#jointheTeam .heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a06ae;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -1px;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+  background: linear-gradient(to right, #1a06ae, #008aff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+#jointheTeam .heading p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  font-weight: 400;
+  color: #666;
+
+}
+#jointheTeam .heading h2:hover {
+  color: #1a06ae;
+  /* Change heading color on hover */
+  transition: color 0.3s ease;
+  
+  /* Optional: underline heading on hover */
+  text-decoration-color: #1a06ae;
+  /* Underline color */
+  text-decoration-thickness: 2px;
+  /* Thickness of the underline */
+  text-decoration-style: solid;
+  /* Style of the underline */
+  
+  /* Ensure underline is applied */
+  text-decoration-skip-ink: none;
+  /* Ensure underline does not skip any ink */
+  text-decoration-skip: none;
+  /* Ensure underline does not skip any ink */
+}
+#jointheTeam .heading p:hover {
+  color: #1a06ae;
+  /* Change text color on hover */
+  transition: color 0.3s ease;
+  
+  /* Optional: underline text on hover */
+  text-decoration-color: #1a06ae;
+  /* Underline color */
+  text-decoration-thickness: 2px;
+  /* Thickness of the underline */
+  text-decoration-style: solid;
+  /* Style of the underline */
+  
+  /* Ensure underline is applied */
+  text-decoration-skip-ink: none;
+  /* Ensure underline does not skip any ink */
+  text-decoration-skip: none;
+  /* Ensure underline does not skip any ink */
+}
+#jointheTeam .heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a06ae;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -1px;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+  background: linear-gradient(to right, #1a06ae, #008aff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+#jointheTeam .heading h2:hover {
+  color: #1a06ae;
+  /* Change heading color on hover */
+  transition: color 0.3s ease;
+  
+  /* Optional: underline heading on hover */
+  text-decoration-color: #1a06ae;
+  /* Underline color */
+  text-decoration-thickness: 2px;
+  /* Thickness of the underline */
+  text-decoration-style: solid;
+  /* Style of the underline */
+  
+  /* Ensure underline is applied */
+  text-decoration-skip-ink: none;
+  /* Ensure underline does not skip any ink */
+  text-decoration-skip: none;
+  /* Ensure underline does not skip any ink */
+}
+#jointheTeam .heading p:hover {
+  color: #1a06ae;
+  /* Change text color on hover */
+  transition: color 0.3s ease;
+  
+  /* Optional: underline text on hover */
+  text-decoration-color: #1a06ae;
+  /* Underline color */
+  text-decoration-thickness: 2px;
+  /* Thickness of the underline */
+  text-decoration-style: solid;
+  /* Style of the underline */
+  
+  /* Ensure underline is applied */
+  text-decoration-skip-ink: none;
+  /* Ensure underline does not skip any ink */
+  text-decoration-skip: none;
+  /* Ensure underline does not skip any ink */
+}
+#jointheTeam .heading {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -0.5px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: 600;
+
+} 
+#jointheTeam .heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a06ae;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -1px;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+  background: linear-gradient(to right, #1a06ae, #008aff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+#jointheTeam .heading p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  font-weight: 400;
+  color: #666;
+
+}
+#jointheTeam .heading h2:hover {
+  color: #1a06ae;
+  /* Change heading color on hover */
+  transition: color 0.3s ease;
+  
+  /* Optional: underline heading on hover */
+  text-decoration-color: #1a06ae;
+  /* Underline color */
+  text-decoration-thickness: 2px;
+  /* Thickness of the underline */
+  text-decoration-style: solid;
+  /* Style of the underline */
+  
+  /* Ensure underline is applied */
+  text-decoration-skip-ink: none;
+  /* Ensure underline does not skip any ink */
+  text-decoration-skip: none;
+  /* Ensure underline does not skip any ink */
+}
+#jointheTeam .heading p:hover {
+  color: #1a06ae;
+  /* Change text color on hover */
+  transition: color 0.3s ease;
+  
+  /* Optional: underline text on hover */
+  text-decoration-color: #1a06ae;
+  /* Underline color */
+  text-decoration-thickness: 2px;
+  /* Thickness of the underline */
+  text-decoration-style: solid;
+  /* Style of the underline */
+  
+  /* Ensure underline is applied */
+  text-decoration-skip-ink: none;
+  /* Ensure underline does not skip any ink */
+  text-decoration-skip: none;
+  /* Ensure underline does not skip any ink */
+}
+#jointheTeam .heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a06ae;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -1px;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+  background: linear-gradient(to right, #1a06ae, #008aff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+#jointheTeam .heading h2:hover {
+  color: #1a06ae;
+  /* Change heading color on hover */
+  transition: color 0.3s ease;
+  
+  /* Optional: underline heading on hover */
+  text-decoration-color: #1a06ae;
+  /* Underline color */
+  text-decoration-thickness: 2px;
+  /* Thickness of the underline */
+  text-decoration-style: solid;
+  /* Style of the underline */
+  
+  /* Ensure underline is applied */
+  text-decoration-skip-ink: none;
+  /* Ensure underline does not skip any ink */
+  text-decoration-skip: none;
+  /* Ensure underline does not skip any ink */
+}
+#jointheTeam .heading p:hover {
+  color: #1a06ae;
+  /* Change text color on hover */
+  transition: color 0.3s ease;
+  
+  /* Optional: underline text on hover */
+  text-decoration-color: #1a06ae;
+  /* Underline color */
+  text-decoration-thickness: 2px;
+  /* Thickness of the underline */
+  text-decoration-style: solid;
+  /* Style of the underline */
+  
+  /* Ensure underline is applied */
+  text-decoration-skip-ink: none;
+  /* Ensure underline does not skip any ink */
+  text-decoration-skip: none;
+  /* Ensure underline does not skip any ink */
+}
+
+/* Dropdown + Button */
+#jointheTeam .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#jointheTeam .input-group select {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+}
+#jointheTeam .input-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+#jointheTeam .input-group select:hover {
+  border-color: #0056b3;
+  /* Change border color on hover */
+  transition: border-color 0.3s ease;
+}
+#jointheTeam .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#jointheTeam .input-group select {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+}
+#jointheTeam .input-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+#jointheTeam .input-group select:hover {
+  border-color: #0056b3;
+  /* Change border color on hover */
+  transition: border-color 0.3s ease;
+}
+#jointheTeam .input-group #applyBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+#jointheTeam .input-group #applyBtn:hover {
+  background-color: #0056b3;
+  /* Change button color on hover */
+  transition: background-color 0.3s ease;
+}
+
+#jointheTeam .form-select {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+}
+#jointheTeam .form-select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+#jointheTeam .form-select:hover {
+  border-color: #0056b3;
+  /* Change border color on hover */
+  transition: border-color 0.3s ease;
+}
+#jointheTeam .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#jointheTeam .input-group select {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+}
+#jointheTeam .input-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+#jointheTeam .input-group select:hover {
+  border-color: #0056b3;
+  /* Change border color on hover */
+  transition: border-color 0.3s ease;
+}
+
+
+/* Apply Button */
+#jointheTeam #applyBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+#jointheTeam #applyBtn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+#jointheTeam #applyBtn:hover {
+  background-color: #0056b3;
+  /* Change button color on hover */
+  transition: background-color 0.3s ease;
+}
+#jointheTeam #applyBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+#jointheTeam #applyBtn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#jointheTeam #applyBtn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #jointheTeam .input-group {
+    flex-direction: column;
+  }
+
+  #jointheTeam .form-select,
+  #jointheTeam #applyBtn {
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
 
 /* Carousel */
 

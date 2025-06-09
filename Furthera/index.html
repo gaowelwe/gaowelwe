@@ -42,8 +42,8 @@
                         <li><a href="#whatweoffer">What We Offer</a></li>
                         <li><a href="#aboutUs">About Us</a></li>
                         <li><a href="#ourTeam">Our Team</a></li>
-                        <li><a href="#solutions">Solutions</a></li>
-                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#jointheTeam">Join The Team</a></li>
+                        <li><a href="#tools">Tools</a></li>
                         <li><a href="#contactUs">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -373,12 +373,55 @@
         </div>
     </section>
 
+    <!--Join the Team-->
+   <section id="jointheTeam" class="secPad">
+  <div class="container">
+    <div class="heading text-center">
+      <!-- Heading -->
+      <h2>Join The Team</h2>
+      <p>We are always looking for talented individuals to join our team.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <p>If you are passionate about data and want to be part of a dynamic team, we would love to hear from you!</p>
+
+        <!-- Dropdown + Button -->
+        <div class="input-group mb-3">
+          <select class="form-select" id="jobSelect" aria-label="Select job type">
+            <option selected disabled>Select a position...</option>
+            <option value="data-scientist">Data Scientist</option>
+            <option value="data-analyst">Data Analyst</option>
+            <option value="machine-learning-engineer">ML Engineer</option>
+            <option value="data-engineer">Data Engineer</option>
+          </select>
+          <button class="btn btn-primary" type="button" id="applyBtn" onclick="applyForJob()">Apply Now</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function applyForJob() {
+  const select = document.getElementById('jobSelect');
+  const val = select.value;
+  if (!val) {
+    alert('Please select a position before applying.');
+  } else {
+    // Example: Redirect to an application page based on the job type
+    window.location.href = `/careers/apply?position=${encodeURIComponent(val)}`;
+  }
+}
+</script>
+
+
     <!--Package-->
-    <section id="packages" class="secPad">
+    <section id="tools" class="secPad">
         <div class="container">
             <div class="heading text-center">
                 <!-- Heading -->
-                <h2>Most Popular Packages</h2>
+                <h2>Most Popular Tools</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div class="row">
