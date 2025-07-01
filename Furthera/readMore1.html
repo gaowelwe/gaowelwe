@@ -44,25 +44,29 @@ main {
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="navbar">
-                <a href="#" class="logo">Furthera</a>
-
-                <!-- Hamburger Button -->
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
-
-                <!-- Navigation Links -->
-                <nav class="nav-links" id="navLinks">
-                    <ul>
-                       <li><a href="index.html">Home</a></li>
-
-  
-                    </ul>
-                </nav>
+   <header class="header">
+    <div class="container">
+        <div class="navbar d-flex align-items-center justify-content-between">
+            <!-- Logo with text -->
+            <div class="logo d-flex align-items-center">
+                <img src="images/photo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+                <a href="#" class="logo-text" style="font-weight: bold; font-size: 20px; color: #000; text-decoration: none;">Furthera</a>
             </div>
+
+            <!-- Hamburger Button (for mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                </ul>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
+
 <main>
     <!-- Intro Section -->
     <section class="intro-readmore" style="padding: 60px 0; background: #f9f9f9;">
@@ -81,9 +85,7 @@ main {
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center footer-content">
-                    <!-- Logo -->
-                    <img src="images/photo.jpg" alt="Furthera Logo" style="max-width: 150px; margin-bottom: 15px;" />
-
+                    
                     <!-- Social Icons -->
                     <div class="social-links">
                         <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
