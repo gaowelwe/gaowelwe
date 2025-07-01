@@ -181,6 +181,23 @@ a:hover {
   color: none;
   /* Slightly darker shade on hover */
 }
+@media (max-width: 768px) {
+  .credits {
+    font-size: 12px;
+    padding: 10px 0;
+    background-color: #00cccc; /* slightly softer cyan on mobile */
+  }
+
+  .credits a {
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .credits a:hover {
+    text-decoration: underline;
+    color: #e0f7fa; /* subtle hover color */
+  }
+}
 
 /*--------------------------------------------------------------
 
@@ -3150,6 +3167,59 @@ footer {
     transition: color 0.3s ease;
 }
 
+/* Tablet */
+@media (max-width: 768px) {
+  .social a {
+    font-size: 28px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 0 8px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 35px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .social a {
+    font-size: 24px;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    margin: 0 6px;
+  }
+
+  .socialIcons {
+    padding: 15px 0;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 30px 0;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .social a {
+    font-size: 20px;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    margin: 0 5px;
+  }
+
+  footer {
+    font-size: 11px;
+    padding: 25px 0;
+  }
+}
+
+
 /* Contact Section */
 .contact ul {
     padding: 0;
@@ -3169,6 +3239,37 @@ footer {
 .contact ul li i {
     margin-right: 15px;
     color: #008aff;
+}
+
+@media (max-width: 768px) {
+  .contact ul li {
+    font-size: 1.1em;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact ul li {
+    font-size: 1em;
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+
+  .contact ul li i {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact ul li {
+    font-size: 0.95em;
+    padding: 5px;
+  }
+
+  .contact ul li i {
+    font-size: 1em;
+    margin-right: 8px;
+  }
 }
 
 
