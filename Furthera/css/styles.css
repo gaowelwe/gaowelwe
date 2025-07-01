@@ -740,6 +740,98 @@ a:hover {
 
 }
 
+/* ===============================
+   Responsive Styles for What We Offer
+   =============================== */
+
+@media (max-width: 1024px) {
+  #whatweoffer .service-box {
+    flex: 1 1 calc(50% - 20px); /* Two columns on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  #whatweoffer {
+    padding: 60px 15px;
+  }
+
+  #whatweoffer .heading h2 {
+    font-size: 2rem;
+  }
+
+  #whatweoffer .heading p {
+    font-size: 1rem;
+  }
+
+  #whatweoffer .service-box {
+    flex: 1 1 100%; /* Single column on small screens */
+    max-width: 100%;
+  }
+
+  #whatweoffer .service-desc {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #whatweoffer .heading h2 {
+    font-size: 1.5rem;
+  }
+
+  #whatweoffer .heading p {
+    font-size: 0.95rem;
+  }
+
+  #whatweoffer .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  #whatweoffer .service-icon .fa {
+    font-size: 1.5rem;
+    line-height: 50px;
+  }
+
+  #whatweoffer .service-desc {
+    font-size: 0.95rem;
+  }
+}
+#whatweoffer .service-box {
+  flex: 1 1 calc(33.333% - 20px);
+  /* Three columns with space */
+  box-sizing: border-box;
+  margin: 10px;
+  /* Space between boxes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  /* Limit width for larger screens */
+  min-width: 280px;
+  /* Ensure minimum width for smaller screens */
+}
+/* ===============================
+   Responsive Styles for Service Boxes
+   =============================== */
+
+@media (max-width: 1024px) {
+  #whatweoffer .service-box {
+    flex: 1 1 calc(50% - 20px); /* Two columns on tablets */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #whatweoffer .service-box {
+    flex: 1 1 100%; /* One column on small screens */
+    max-width: 100%;
+    margin: 10px 0; /* Stack vertically with spacing */
+  }
+}
+
+
 .service-box {
   background: #fff;
   border-radius: 12px;
@@ -963,6 +1055,85 @@ a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
+/* ===================================== 
+   Media Queries for Responsive Service Section
+======================================= */
+
+/* Tablet View – Two columns */
+@media (max-width: 1024px) {
+  .service-box {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 100%;
+  }
+
+  .service-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .service-icon .fa {
+    font-size: 1.8rem;
+    line-height: 55px;
+  }
+}
+
+/* Mobile View – Single column */
+@media (max-width: 768px) {
+  .service-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .service-icon .fa {
+    font-size: 1.5rem;
+    line-height: 50px;
+  }
+
+  .service-desc h5 {
+    font-size: 1.1rem;
+  }
+
+  .service-desc p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .service-box {
+    padding: 20px 15px;
+  }
+
+  .service-desc {
+    padding: 0 5px;
+  }
+
+  .service-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .service-icon .fa {
+    font-size: 1.3rem;
+    line-height: 45px;
+  }
+
+  .service-desc h5 {
+    font-size: 1rem;
+  }
+
+  .service-desc p {
+    font-size: 0.9rem;
+  }
+}
+
+
 #whatweoffer .btn.btn-skin {
   display: inline-block;
   margin-top: 20px;
@@ -1028,44 +1199,100 @@ a:hover {
   transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
+/* ===============================
+   Media Queries for Buttons and Hover Effects
+   =============================== */
 
-/* Responsive Breakpoints */
+/* Tablet View */
 @media (max-width: 1024px) {
-  #whatweoffer .heading h2 {
-    font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #whatweoffer .heading h2 {
-    font-size: 2rem;
-  }
-
-  .service-box {
-    padding: 25px 15px;
-  }
-
-  .service-desc h5 {
-    font-size: 1.1rem;
-  }
-
-  .service-desc p {
+  #whatweoffer .btn.btn-skin {
     font-size: 0.95rem;
+    padding: 10px 16px;
+    max-width: 180px;
   }
 }
 
+/* Mobile View */
+@media (max-width: 768px) {
+  #whatweoffer .btn.btn-skin {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    max-width: 160px;
+  }
+
+  #whatweoffer .btn.btn-skin:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Small Devices */
 @media (max-width: 480px) {
-  #whatweoffer .heading h2 {
-    font-size: 1.7rem;
-  }
-
-  .service-box {
-    padding: 20px 10px;
-  }
-
-  .btn.btn-skin {
+  #whatweoffer .btn.btn-skin {
     font-size: 0.85rem;
-    padding: 6px 14px;
+    padding: 8px 12px;
+    max-width: 140px;
+    margin-top: 15px;
+  }
+
+  #whatweoffer .btn.btn-skin:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+#whatweoffer .btn.btn-skin:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Reset shadow on click */
+}
+#whatweoffer .btn.btn-skin:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 240   , 240, 0.3);
+  /* Add focus ring */
+} 
+/* ===============================================
+   Responsive Media Queries for Button States
+   =============================================== */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  #whatweoffer .btn.btn-skin {
+    font-size: 0.95rem;
+    max-width: 180px;
+  }
+
+  #whatweoffer .btn.btn-skin:focus {
+    box-shadow: 0 0 0 3px rgba(0, 240, 240, 0.25); /* Slightly dimmer ring */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  #whatweoffer .btn.btn-skin {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    max-width: 160px;
+  }
+
+  #whatweoffer .btn.btn-skin:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  #whatweoffer .btn.btn-skin:focus {
+    box-shadow: 0 0 0 2.5px rgba(0, 240, 240, 0.3);
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  #whatweoffer .btn.btn-skin {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    max-width: 140px;
+  }
+
+  #whatweoffer .btn.btn-skin:focus {
+    box-shadow: 0 0 0 2px rgba(0, 240, 240, 0.3);
   }
 }
 
