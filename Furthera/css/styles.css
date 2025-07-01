@@ -739,397 +739,51 @@ a:hover {
   /* Set line height for better readability */
 
 }
-
 /* ===============================
-   Responsive Styles for What We Offer
+   Responsive Styles for What We Offer – Single Column
    =============================== */
 
 @media (max-width: 1024px) {
   #whatweoffer .service-box {
-    flex: 1 1 calc(50% - 20px); /* Two columns on tablets */
-  }
-}
-
-@media (max-width: 768px) {
-  #whatweoffer {
-    padding: 60px 15px;
-  }
-
-  #whatweoffer .heading h2 {
-    font-size: 2rem;
-  }
-
-  #whatweoffer .heading p {
-    font-size: 1rem;
-  }
-
-  #whatweoffer .service-box {
-    flex: 1 1 100%; /* Single column on small screens */
-    max-width: 100%;
-  }
-
-  #whatweoffer .service-desc {
-    padding: 0 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  #whatweoffer .heading h2 {
-    font-size: 1.5rem;
-  }
-
-  #whatweoffer .heading p {
-    font-size: 0.95rem;
-  }
-
-  #whatweoffer .service-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  #whatweoffer .service-icon .fa {
-    font-size: 1.5rem;
-    line-height: 50px;
-  }
-
-  #whatweoffer .service-desc {
-    font-size: 0.95rem;
-  }
-}
-#whatweoffer .service-box {
-  flex: 1 1 calc(33.333% - 20px);
-  /* Three columns with space */
-  box-sizing: border-box;
-  margin: 10px;
-  /* Space between boxes */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 350px;
-  /* Limit width for larger screens */
-  min-width: 280px;
-  /* Ensure minimum width for smaller screens */
-}
-/* ===============================
-   Responsive Styles for Service Boxes
-   =============================== */
-
-@media (max-width: 1024px) {
-  #whatweoffer .service-box {
-    flex: 1 1 calc(50% - 20px); /* Two columns on tablets */
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  #whatweoffer .service-box {
-    flex: 1 1 100%; /* One column on small screens */
-    max-width: 100%;
-    margin: 10px 0; /* Stack vertically with spacing */
-  }
-}
-
-
-.service-box {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-  text-align: center;
-  color: #333;
-  font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: -0.5px;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.service-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background: #f9f9f9;
-  /* Slightly change background on hover */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-  /* Change cursor to pointer on hover */
-  text-align: center;
-  /* Center text on hover */
-  padding: 30px 20px;
-  /* Maintain padding on hover */
-  box-sizing: border-box;
-  /* Ensure padding is included in width */
-  max-width: 350px;
-  /* Limit width for larger screens */
-  min-width: 280px;
-  /* Ensure minimum width for smaller screens */
-  display: flex;
-  /* Ensure flexbox layout */
-  flex-direction: column;
-  /* Stack children vertically */
-  align-items: center;
-  /* Center children horizontally */
-  justify-content: center;
-  /* Center children vertically */
-  text-align: center;
-  /* Center text */
-  font-family: 'Source Sans Pro', sans-serif;
-  /* Use consistent font */
-
-
-}
-
-
-.service-icon {
-  margin-bottom: 15px;
-  color: #00F0F0;
-  font-size: 2.5rem;
-  /* Increase icon size */
-  transition: color 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  /* Fixed width for icon container */
-  height: 60px;
-  /* Fixed height for icon container */
-  border-radius: 50%;
-  /* Make it circular */
-  background: rgba(26, 6, 174, 0.1);
-  /* Light background for contrast */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
-  transition: background 0.3s ease, color 0.3s ease;
-
-}
-
-.service-icon:hover {
-
-  /* Change icon color on hover */
-  background: #00F0F0;
-  /* Change background on hover */
-  transition: background 0.3s ease, color 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  /* Slightly increase shadow on hover */
-  transform: scale(1.1);
-  /* Slightly enlarge icon on hover */
-  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
-
-}
-
-.service-icon .fa {
-  font-size: 2rem;
-  /* Icon size */
-  transition: transform 0.3s ease, color 0.3s ease;
-  color: #00F0F0;
-  /* Default icon color */
-  display: inline-block;
-  /* Ensure icon is treated as a block for centering */
-  width: 100%;
-  /* Full width for centering */
-  height: 100%;
-  /* Full height for centering */
-  text-align: center;
-  /* Center icon horizontally */
-  line-height: 60px;
-  /* Center icon vertically */
-  transition: transform 0.3s ease, color 0.3s ease;
-  transform: scale(1);
-  /* Initial scale */
-
-
-}
-
-.service-icon .fa {
-  font-size: 2rem;
-  transition: transform 0.3s ease, color 0.3s ease;
-  color: #00F0F0;
-  /* Default icon color */
-
-}
-
-.service-icon:hover .fa {
-  transform: scale(1.1);
-  /* Slightly enlarge icon on hover */
-  transition: transform 0.3s ease, color 0.3s ease;
-
-  /* Change icon color on hover */
- 
-
-}
-
-.service-desc {
-  text-align: center;
-  padding: 0 10px;
-  /* Add padding for better spacing */
-  box-sizing: border-box;
-  /* Ensure padding is included in width */
-  max-width: 350px;
-  /* Limit width for larger screens */
-  margin: 0 auto;
-  /* Center the content */
-  font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: -0.5px;
-  font-weight: 400;
-  color: #444;
-  /* Default text color */
-  transition: color 0.3s ease;
-  text-align: justify;
-  /* Justify text for better readability */
-  text-justify: inter-word;
-  /* Better justification for word spacing */
-  text-indent: 0.5em;
-  /* Indent the first line */
-}
-
-
-.service-desc h5 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #00F0F0;
-  text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: -0.5px;
-  transition: color 0.3s ease;
-  text-decoration: none;
-  /* Remove underline on hover */
-  text-decoration-color: #00F0F0;
-  /* Underline color */
-
-
-}
-
-.service-desc p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: -0.5px;
-  transition: color 0.3s ease;
-  text-align: justify;
-  /* Justify text for better readability */
-  text-justify: inter-word;
-  /* Better justification for word spacing */
-  text-indent: 0.5em;
-  /* Indent the first line */
-  margin-top: 0;
-  /* Remove top margin */
-  margin-bottom: 20px;
-  /* Add bottom margin for spacing */
-  padding: 0 10px;
-  /* Add horizontal padding for better spacing */
-  box-sizing: border-box;
-  /* Ensure padding is included in width */
-  max-width: 500px;
-  /* Limit width for larger screens */
-  margin-left: auto;
-  /* Center the content */
-
-}
-
-#whatweoffer .service-box:hover p {
-  color: #00F0F0;
-  /* Change text color on hover */
-  transition: color 0.3s ease;
-  
-
-
-}
-
-#whatweoffer .service-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background: #f9f9f9;
-  /* Slightly change background on hover */
-  color: #00F0F0;
-  /* Change text color on hover */
-  
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
-}
-
-/* ===================================== 
-   Media Queries for Responsive Service Section
-======================================= */
-
-/* Tablet View – Two columns */
-@media (max-width: 1024px) {
-  .service-box {
-    flex: 1 1 calc(50% - 20px);
-    max-width: 100%;
-  }
-
-  .service-icon {
-    width: 55px;
-    height: 55px;
-  }
-
-  .service-icon .fa {
-    font-size: 1.8rem;
-    line-height: 55px;
-  }
-}
-
-/* Mobile View – Single column */
-@media (max-width: 768px) {
-  .service-box {
     flex: 1 1 100%;
     max-width: 100%;
     margin: 10px 0;
   }
+}
 
-  .service-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .service-icon .fa {
-    font-size: 1.5rem;
-    line-height: 50px;
-  }
-
-  .service-desc h5 {
-    font-size: 1.1rem;
-  }
-
-  .service-desc p {
-    font-size: 0.95rem;
+/* This becomes redundant now */
+@media (max-width: 768px) {
+  #whatweoffer .service-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 10px 0;
   }
 }
 
-/* Extra Small Devices */
-@media (max-width: 480px) {
-  .service-box {
-    padding: 20px 15px;
+/* And this one: */
+@media (max-width: 1024px) {
+  #whatweoffer .service-box {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 100%;
   }
+}
 
-  .service-desc {
-    padding: 0 5px;
+
+
+/* This becomes redundant now */
+@media (max-width: 768px) {
+  #whatweoffer .service-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 10px 0;
   }
+}
 
-  .service-icon {
-    width: 45px;
-    height: 45px;
-  }
-
-  .service-icon .fa {
-    font-size: 1.3rem;
-    line-height: 45px;
-  }
-
-  .service-desc h5 {
-    font-size: 1rem;
-  }
-
-  .service-desc p {
-    font-size: 0.9rem;
+/* And this one: */
+@media (max-width: 1024px) {
+  #whatweoffer .service-box {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 100%;
   }
 }
 
