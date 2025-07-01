@@ -45,8 +45,14 @@
                         <li><a href="#jointheTeam">Join The Team</a></li>
                         <li><a href="#tools">Tools</a></li>
                         <li><a href="#contactUs">Contact Us</a></li>
+                        
+
                     </ul>
                 </nav>
+               
+
+
+
             </div>
         </div>
     </header>
@@ -66,7 +72,8 @@
                         <div class="flex-caption">
                             <h1>Data Scientist</h1>
                             <p>Doloribus omnis minus temporibus perferendis.</p>
-                            <a href="#" class="btn btn-theme">Read More</a>
+                            <a href="readMore.html" class="btn btn-theme">Read More</a>
+
                         </div>
                     </div>
 
@@ -124,7 +131,7 @@
             <div class="container">
                 <div class="heading text-center">
                     <h2>What We Offer</h2>
-                    
+
                 </div>
 
                 <div class="row animatedParent">
@@ -374,46 +381,48 @@
     </section>
 
     <!--Join the Team-->
-   <section id="jointheTeam" class="secPad">
-  <div class="container">
-    <div class="heading text-center">
-      <!-- Heading -->
-      <h2>Join The Team</h2>
-      <p>We are always looking for talented individuals to join our team.</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-6 text-center">
-        <p>If you are passionate about data and want to be part of a dynamic team, we would love to hear from you!</p>
+    <section id="jointheTeam" class="secPad">
+        <div class="container">
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>Join The Team</h2>
+                <p>We are always looking for talented individuals to join our team.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <p>If you are passionate about data and want to be part of a dynamic team, we would love to hear
+                        from you!</p>
 
-        <!-- Dropdown + Button -->
-        <div class="input-group mb-3">
-          <select class="form-select" id="jobSelect" aria-label="Select job type">
-            <option selected disabled>Select a position...</option>
-            <option value="data-scientist">Data Scientist</option>
-            <option value="data-analyst">Data Analyst</option>
-            <option value="machine-learning-engineer">ML Engineer</option>
-            <option value="data-engineer">Data Engineer</option>
-          </select>
-          <button class="btn btn-primary" type="button" id="applyBtn" onclick="applyForJob()">Apply Now</button>
+                    <!-- Dropdown + Button -->
+                    <div class="input-group mb-3">
+                        <select class="form-select" id="jobSelect" aria-label="Select job type">
+                            <option selected disabled>Select a position...</option>
+                            <option value="data-scientist">Data Scientist</option>
+                            <option value="data-analyst">Data Analyst</option>
+                            <option value="machine-learning-engineer">ML Engineer</option>
+                            <option value="data-engineer">Data Engineer</option>
+                        </select>
+                        <button class="btn btn-primary" type="button" id="applyBtn" onclick="applyForJob()">Apply
+                            Now</button>
+                    </div>
+
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-function applyForJob() {
-  const select = document.getElementById('jobSelect');
-  const val = select.value;
-  if (!val) {
-    alert('Please select a position before applying.');
-  } else {
-    // Example: Redirect to an application page based on the job type
-    window.location.href = `/careers/apply?position=${encodeURIComponent(val)}`;
-  }
-}
-</script>
+    <script>
+        function applyForJob() {
+            const select = document.getElementById('jobSelect');
+            const val = select.value;
+            if (!val) {
+                alert('Please select a position before applying.');
+            } else {
+                // Example: Redirect to an application page based on the job type
+                window.location.href = `/careers/apply?position=${encodeURIComponent(val)}`;
+            }
+        }
+    </script>
 
 
     <!--Package-->
@@ -738,7 +747,7 @@ function applyForJob() {
         </div>
     </section>-->
 
-    
+
     <!--Portfolio-->
     <!-- <section id="portfolio" class="page-section section appear clearfix secPad">
         <div class="container">
@@ -888,7 +897,8 @@ function applyForJob() {
             <div class="row justify-content-center align-items-start">
                 <!-- Contact Form -->
                 <div class="col-md-6 mb-4">
-                    <form method="post" action="#" id="contactfrm" role="form" novalidate>
+                    <form action="http://localhost:5000/send-email" method="POST" action="#" id="contactfrm" role="form"
+                        novalidate>
                         <div class="form-group mb-3">
                             <label for="name">Name <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name"
@@ -928,24 +938,33 @@ function applyForJob() {
 
 
     <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center footer-content">
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="fa fa-flickr"></i></a>
-                        <a href="#" class="social-icon"><i class="fa fa-github"></i></a>
-                    </div>
-                    <div class="credits">
-                        Copyright &copy; 2025 | All Rights Reserved — Powered by
-                        <a href="https://Furthera.co.za/">Furthera</a>
-                    </div>
+    <footer class="footer" style="background-color: #00F0F0; padding: 20px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center footer-content">
+                
+                <!-- Logo -->
+                <img src="images/photo.jpg" alt="Furthera Logo" style="max-width: 150px; margin-bottom: 15px;" />
+
+                <!-- Social Icons -->
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fa fa-flickr"></i></a>
+                    <a href="#" class="social-icon"><i class="fa fa-github"></i></a>
                 </div>
+
+                <!-- Credits -->
+                <div class="credits" style="margin-top: 10px;">
+                    Copyright &copy; 2025 | All Rights Reserved — Powered by
+                    <a href="https://Furthera.co.za/">Furthera</a>
+                </div>
+
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
 

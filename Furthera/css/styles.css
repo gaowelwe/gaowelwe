@@ -98,7 +98,7 @@ h2 {
 }
 
 a {
-  color: #1a06ae;
+  color: #00F0F0
   text-decoration: none;
   text-shadow: none;
   -webkit-transition: all 0.2s linear;
@@ -119,12 +119,12 @@ a:hover {
 }
 
 .btn:hover {
-  background: #1a06ae;
+  background: #00F0F0;
   color: #fff;
 }
 
 .btn-primary {
-  background: #1a06ae;
+  background: #00F0F0;
 }
 
 .form-control {
@@ -154,7 +154,7 @@ a:hover {
 
 .social-icon:hover {
   transform: scale(1.1);
-  background-color: #1a06ae;
+  background-color: #00F0F0;
   /* Background color on hover */
 }
 
@@ -164,7 +164,7 @@ a:hover {
   font-size: 14px;
   color: #555;
   padding: 15px 0;
-  background-color: #1a06ae;
+  background-color: #00F0F0;
   /* Light background for a subtle look */
 
 }
@@ -178,7 +178,7 @@ a:hover {
 
 .credits a:hover {
   text-decoration: underline;
-  color: #0d0470;
+  color: none;
   /* Slightly darker shade on hover */
 }
 
@@ -215,7 +215,7 @@ a:hover {
 /* Header Base */
 .header {
   width: 100%;
-  background: #1a06ae;
+  background: #00F0F0;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -285,13 +285,13 @@ a:hover {
 /* Hover state for nav links */
 .nav-links a:hover {
 
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
   background-color: white;
   /* Change background color on hover */
   transition: all 0.3s ease; 
   text-decoration: none;
-  text-decoration-color: #1a06ae; 
+  text-decoration-color: #00F0F0; 
   /* Underline color */
   
   
@@ -400,7 +400,7 @@ a:hover {
     right: -100%;
     height: calc(100vh - 85px);
     width: 250px;
-    background-color: #1a06ae;
+    background-color: #00F0F0;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
@@ -434,7 +434,7 @@ a:hover {
 
   .nav-links ul li a:hover {
     background-color: white;
-    color: #1a06ae;
+    color: #00F0F0;
   }
 }
 
@@ -483,13 +483,13 @@ a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0px;
-  color: #1a06ae;
+  color: #00F0F0;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -1px;
   padding-bottom: 10px;
   display: inline-block;
-  background: linear-gradient(to right, #1a06ae, #008aff);
+  background: linear-gradient(to right, #00F0F0, #008aff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -527,7 +527,7 @@ a:hover {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #1a06ae;
+  color: #00F0F0;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -0.5px;
@@ -599,7 +599,7 @@ a:hover {
   background: #f9f9f9;
   /* Slightly change background on hover */
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
 
 
@@ -646,7 +646,7 @@ a:hover {
   font-size: 2rem;
   /* Icon size */
   transition: transform 0.3s ease;
-  color: #1a06ae;
+  color: #00F0F0;
   /* Default icon color */
   display: inline-block;
   /* Ensure icon is treated as a block for centering */
@@ -766,7 +766,7 @@ a:hover {
 
 .service-icon {
   margin-bottom: 15px;
-  color: #1a06ae;
+  color: #00F0F0;
   font-size: 2.5rem;
   /* Increase icon size */
   transition: color 0.3s ease;
@@ -790,7 +790,7 @@ a:hover {
 .service-icon:hover {
 
   /* Change icon color on hover */
-  background: #1a06ae;
+  background: #00F0F0;
   /* Change background on hover */
   transition: background 0.3s ease, color 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -805,7 +805,7 @@ a:hover {
   font-size: 2rem;
   /* Icon size */
   transition: transform 0.3s ease, color 0.3s ease;
-  color: #1a06ae;
+  color: #00F0F0;
   /* Default icon color */
   display: inline-block;
   /* Ensure icon is treated as a block for centering */
@@ -827,7 +827,7 @@ a:hover {
 .service-icon .fa {
   font-size: 2rem;
   transition: transform 0.3s ease, color 0.3s ease;
-  color: #1a06ae;
+  color: #00F0F0;
   /* Default icon color */
 
 }
@@ -871,14 +871,14 @@ a:hover {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #1a06ae;
+  color: #00F0F0;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -0.5px;
   transition: color 0.3s ease;
   text-decoration: none;
   /* Remove underline on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
 
 
@@ -914,7 +914,7 @@ a:hover {
 }
 
 #whatweoffer .service-box:hover p {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
   transition: color 0.3s ease;
   
@@ -927,7 +927,7 @@ a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   background: #f9f9f9;
   /* Slightly change background on hover */
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
   
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
@@ -938,7 +938,7 @@ a:hover {
   margin-top: 20px;
   padding: 10px 20px;
   border-radius: 6px;
-  background-color: #1a06ae;
+  background-color: #00F0F0;
   color: #fff;
   text-transform: uppercase;
   font-size: 1rem;
@@ -964,7 +964,7 @@ a:hover {
 }
 
 #whatweoffer .btn.btn-skin:hover {
-  background-color: #14058e;
+  background-color: #00F0F0;
   /* Darker shade on hover */
   color: #fff;
   /* Ensure text color remains white */
@@ -987,7 +987,7 @@ a:hover {
 }
 
 #whatweoffer .service-box:hover .service-icon {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change icon color on hover */
   
   transition: background 0.3s ease, color 0.3s ease;
@@ -1068,7 +1068,7 @@ a:hover {
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   text-decoration-thickness: 2px;
   text-decoration-style: solid;
   
@@ -1083,14 +1083,14 @@ a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #1a06ae;
+  color: #00F0F0;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -1px;
   position: relative;
   padding-bottom: 10px;
   display: inline-block;
-  background: linear-gradient(to right, #1a06ae, #008aff);
+  background: linear-gradient(to right, #00F0F0, #008aff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -1106,7 +1106,7 @@ a:hover {
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   text-decoration-thickness: 2px;
   text-decoration-style: solid;
  
@@ -1136,16 +1136,16 @@ a:hover {
   font-weight: 400;
   color: #666;
   text-decoration: none;
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
 
 }
 #aboutUs .heading p:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
   transition: color 0.3s ease;
  
   /* Optional: underline text on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1161,12 +1161,12 @@ a:hover {
 
 }
 #aboutUs .heading h2:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change heading color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline heading on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1217,7 +1217,7 @@ a:hover {
   /* Reset shadow on click */
 }
 #aboutUs img:focus-visible {
-  outline: 2px solid #1a06ae;
+  outline: 2px solid #00F0F0;
   /* Add focus outline for accessibility */
   outline-offset: 2px;
   /* Offset outline for better visibility */
@@ -1263,7 +1263,7 @@ a:hover {
   font-weight: 400;
   transition: color 0.3s ease;
   text-decoration: none;
-  text-decoration-color: #1a06ae; 
+  text-decoration-color: #00F0F0; 
   text-decoration-thickness: 2px;
   text-decoration-style: solid;
   
@@ -1272,12 +1272,12 @@ a:hover {
 
 }
 #aboutUs p:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline text on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1291,7 +1291,7 @@ a:hover {
   /* Ensure underline does not skip any ink */
   text-decoration: none;
   /* Remove underline on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1310,12 +1310,12 @@ a:hover {
 
 }
 #aboutUs .heading h2:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change heading color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline heading on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1473,14 +1473,14 @@ a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #1a06ae;
+  color: #00F0F0;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -1px;
   position: relative;
   padding-bottom: 10px;
   display: inline-block;
-  background: linear-gradient(to right, #1a06ae, #008aff);
+  background: linear-gradient(to right, #00F0F0, #008aff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -1506,12 +1506,12 @@ a:hover {
 
 }
 #jointheTeam .heading h2:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change heading color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline heading on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1525,12 +1525,12 @@ a:hover {
   /* Ensure underline does not skip any ink */
 }
 #jointheTeam .heading p:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline text on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1547,25 +1547,25 @@ a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #1a06ae;
+  color: #00F0F0;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -1px;
   position: relative;
   padding-bottom: 10px;
   display: inline-block;
-  background: linear-gradient(to right, #1a06ae, #008aff);
+  background: linear-gradient(to right, #00F0F0, #008aff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 #jointheTeam .heading h2:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change heading color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline heading on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1579,12 +1579,12 @@ a:hover {
   /* Ensure underline does not skip any ink */
 }
 #jointheTeam .heading p:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline text on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1616,14 +1616,14 @@ a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #1a06ae;
+  color: #00F0F0;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -1px;
   position: relative;
   padding-bottom: 10px;
   display: inline-block;
-  background: linear-gradient(to right, #1a06ae, #008aff);
+  background: linear-gradient(to right, #00F0F0, #008aff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -1649,12 +1649,12 @@ a:hover {
 
 }
 #jointheTeam .heading h2:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change heading color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline heading on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1668,12 +1668,12 @@ a:hover {
   /* Ensure underline does not skip any ink */
 }
 #jointheTeam .heading p:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline text on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1690,25 +1690,25 @@ a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #1a06ae;
+  color: #00F0F0;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -1px;
   position: relative;
   padding-bottom: 10px;
   display: inline-block;
-  background: linear-gradient(to right, #1a06ae, #008aff);
+  background: linear-gradient(to right, #00F0F0, #008aff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 #jointheTeam .heading h2:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change heading color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline heading on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1722,12 +1722,12 @@ a:hover {
   /* Ensure underline does not skip any ink */
 }
 #jointheTeam .heading p:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   /* Change text color on hover */
   transition: color 0.3s ease;
   
   /* Optional: underline text on hover */
-  text-decoration-color: #1a06ae;
+  text-decoration-color: #00F0F0;
   /* Underline color */
   text-decoration-thickness: 2px;
   /* Thickness of the underline */
@@ -1891,6 +1891,7 @@ a:hover {
 }
 
 
+
 /* Carousel */
 
 /*.carousel-inner*/
@@ -1975,7 +1976,7 @@ a:hover {
   font-size: 3.5em;
   margin: 90px 0 30px;
   line-height: 1.2em;
-  color: #1a06ae;
+  color: #00F0F0;
   font-weight: 300;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
@@ -1983,7 +1984,7 @@ a:hover {
   position: relative;
   padding-bottom: 20px;
   display: inline-block;
-  background: linear-gradient(to right, #1a06ae, #008aff);
+  background: linear-gradient(to right, #00F0F0, #008aff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -2358,7 +2359,7 @@ a:hover {
 /* Base Styles */
 #introText {
   padding: 80px 20px;
-  background-color: #1a06ae;
+  background-color: #00F0F0;
   color: #1a1a1a;
   text-align: center;
 }
@@ -2600,7 +2601,7 @@ a:hover {
 
 .service-box {
   background: #fff;
-  border-top: 5px solid #1a06ae;
+  border-top: 5px solid #00F0F0;
   padding: 40px 20px;
 }
 
@@ -2762,7 +2763,7 @@ a:hover {
 }
 
 #timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul span.importo {
-  color: #1a06ae;
+  color: #00F0F0;
   font-size: 1.3em;
 }
 
@@ -2944,11 +2945,11 @@ nav#filter a {
 }
 
 .portfolio-item .portfolio-desc a {
-  color: #1a06ae;
+  color: #00F0F0;
   text-align: center;
   display: block;
   padding: 18px;
-  border: 2px solid #1a06ae;
+  border: 2px solid #00F0F0;
   margin: 0 auto;
   width: 66px;
 }
@@ -3096,7 +3097,7 @@ body {
 /* Footer */
 footer {
     padding: 45px 0;
-    background: #1a06ae;
+    background: #00F0F0;
     color: #ffffff;
     text-align: center;
     font-size: 14px;
@@ -3130,7 +3131,7 @@ footer {
 .social a:hover,
 .social a:focus,
 .social a:active {
-    color: #1a06ae;
+    color: none;
     outline: none;
     box-shadow: none;
     transition: color 0.3s ease;
@@ -3512,8 +3513,8 @@ footer {
 
 .panel-danger>.panel-heading {
   color: #FFFFFF;
-  background-color: #1a06ae;
-  border-color: #1a06ae;
+  background-color: #00F0F0;
+  border-color: #00F0F0;
 }
 
 .panel {
@@ -3543,12 +3544,12 @@ footer {
 #ourTeam .heading h2,
 #ourTeam .heading p {
   transition: color 0.3s ease;
-  color: #1a06ae;
+  color: #00F0F0;
 
 }
 #ourTeam .heading h2:hover,
 #ourTeam .heading p:hover {
-  color: #1a06ae;
+  color: #00F0F0;
   transition: color 0.3s ease;
 
 }
@@ -3558,7 +3559,7 @@ footer {
   font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
-  color: #1a06ae;
+  color: #00F0F0;
   transition: color 0.3s ease;
 
 }
@@ -3683,7 +3684,7 @@ footer {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #1a06ae;
+  color: #00F0F0;
   transition: color 0.3s ease;
 
 }
@@ -3964,17 +3965,17 @@ body {
   top: 4px;
   left: 4px;
   border-radius: 0;
-  background: #fff;
+  background: #00F0F0;
 }
 
 a.btn.btn-skin {
-  background: #1a06ae;
+  background: #00F0F0;
   color: #fff;
 }
 
 .da-slide .da-link {
   top: 270px;
-  color: #1a06ae;
+  color: #00F0F0;
   text-shadow: none;
   border: 1px solid rgba(255, 255, 255, 0.8);
   padding: 2px 20px;
