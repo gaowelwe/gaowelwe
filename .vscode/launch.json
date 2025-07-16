@@ -8,7 +8,13 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\gaowe\\OneDrive\\Desktop\\CEO App\\index.html"
+            "file": "c:\\Users\\gaowe\\OneDrive\\Desktop\\CEO App\\gaowelwe\\index.html",
+            "webRoot": "c:\\Users\\gaowe\\OneDrive\\Desktop\\CEO App\\gaowelwe",
+            "sourceMapPathOverrides": {
+                "webpack:///./src/*": "${webRoot}/src/*",
+                "webpack:///./*": "${webRoot}/*"
+            },
+            
         }
     ]
 }
