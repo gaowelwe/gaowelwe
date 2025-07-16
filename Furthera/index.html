@@ -939,39 +939,6 @@
 
 
 
-    <div class="chatbot-container">
-        <div class="mini-robot">
-            <div class="head">
-                <div class="eye left"></div>
-                <div class="eye right"></div>
-            </div>
-            <div class="body">
-                <div class="arm left-arm"></div>
-                <div class="arm right-arm"></div>
-            </div>
-        </div>
-        <div class="chat-header">💬 Chat with Us</div>
-        <div class="chat-body" id="chatBody">
-            <div class="bot-message">Hi there! How can I help you today?</div>
-        </div>
-        <div class="chat-input">
-            <input type="text" id="userInput" placeholder="Type your message..." />
-            <button onclick="sendMessage()">Send</button>
-        </div>
-    </div>
-
-
-
-    <div id="popiaPopup" class="popia-popup">
-        <span>
-            We use  cookies and process personal data as per the POPIA Act. By using this site, you agree to our
-            <a href="privacy-policy.html" style="color:#4CAF50; text-decoration: underline;">Privacy Policy</a>
-        </span>
-        <div>
-            <button id="acceptPopia" type="button">I Accept</button>
-            <button id="rejectPopia" type="button">Reject</button>
-        </div>
-    </div>
     <!-- Footer Section -->
     <footer class="footer" style="background-color: #00F0F0; padding: 20px 0;">
     <div class="container">
@@ -1338,68 +1305,7 @@
         });
     </script>
 
-    <script>
-    function sendMessage() {
-        const input = document.getElementById("userInput");
-        const message = input.value.trim();
-        if (message === "") return;
-
-        const chatBody = document.getElementById("chatBody");
-
-        const userMsg = document.createElement("div");
-        userMsg.className = "user-message";
-        userMsg.textContent = message;
-        chatBody.appendChild(userMsg);
-
-        input.value = "";
-
-        animateRobotWave();
-
-        setTimeout(() => {
-            const botMsg = document.createElement("div");
-            botMsg.className = "bot-message";
-            botMsg.textContent = "Thanks for your message! We'll get back to you soon.";
-            chatBody.appendChild(botMsg);
-            chatBody.scrollTop = chatBody.scrollHeight;
-        }, 500);
-    }
-
-    function animateRobotWave() {
-        const arm = document.querySelector(".left-arm");
-        arm.style.animation = "wave 0.5s 2";
-        setTimeout(() => {
-            arm.style.animation = "wave 2s infinite";
-        }, 1000);
-    }
-
-</script>
-
-
-
-   <script>
-       document.addEventListener("DOMContentLoaded", function () {
-           const popup = document.getElementById("popiaPopup");
-           const acceptBtn = document.getElementById("acceptPopia");
-           const rejectBtn = document.getElementById("rejectPopia");
-
-           // Check if user already responded
-           if (localStorage.getItem("popiaConsent")) {
-               popup.style.display = "none";
-           }
-
-           acceptBtn.addEventListener("click", function () {
-               localStorage.setItem("popiaConsent", "accepted");
-               popup.style.display = "none";
-               alert("Thank you for accepting our privacy policy.");
-           });
-
-           rejectBtn.addEventListener("click", function () {
-               localStorage.setItem("popiaConsent", "rejected");
-               popup.style.display = "none";
-               alert("You have rejected the privacy policy. Some features may be limited.");
-           });
-       });
-   </script>
+    
  
 
 
