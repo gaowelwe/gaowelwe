@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zoom & Intercepts Tracker</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #111;
+      color: white;
+    }
+    canvas {
+      display: block;
+      cursor: crosshair;
+    }
+    body {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      margin-top: 30px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      position: relative;
+      display: inline-block;
+    }
+    img {
+      max-width: 100%;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+<canvas id="canvas" width="3000" height="2000"></canvas>
+<h2>👀 Players' Gaze & Ball Intercept Visualizer</h2>
+
+  <div class="container">
+    <img id="field" src="your-image.png" alt="Match Image">
+    <canvas id="overlay" width="3000" height="2000"></canvas>
+  </div>
+
+</body>
+</html>
