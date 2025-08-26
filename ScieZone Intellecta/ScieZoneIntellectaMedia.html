@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScieZone Intellecta - Our People</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+/* =========================
+   Global Theme: Black & Gold
+========================= */
+ /* =========================
+       Global Theme: Black & Gold
+    ========================= */
+    body {
+      background-color: #000;
+      color: #FFD700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+    }
+    h1, h2, h3, h5 {
+      color: #FFD700;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+      color: #FFD700;
+      transition: 0.3s;
+    }
+    a:hover { color: #fff; }
+
+    /* =========================
+   Navbar
+========================= */
+.navbar {
+  background-color: grey;
+  padding: 15px 0;
+  transition: 0.3s;
+  
+}
+.navbar-brand {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.4rem;
+
+}
+.navbar-nav .nav-link {
+  color: #FFD700;
+  margin: 0 10px;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #fff;
+  font-weight: bold;
+}
+.navbar-shrink {
+  padding: 5px 0;
+  background: rgba(0, 0, 0, 0.95);
+}
+.navbar-toggler {
+  border: 2px solid #FFD700;
+  background-color: #000;
+  margin-bottom: 10px;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='gold' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* =========================
+   Media Section Styling
+========================= */
+.media-section {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    padding: 104px 20px 80px;
+    color: #FFD700;
+    text-align: center;
+}
+.media-section .section-title2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 20px;
+    position: relative;
+}
+.media-section .section-title2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: #FFD700;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.media-section .overview-text {
+    font-size: 1.2rem;
+    color: #f1e09e;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+   /* =========================
+       Section Title2
+    ========================= */
+    .section-title2 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin: 20px 0 40px;
+      position: relative;
+    }
+    .section-title2::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: #FFD700;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+/* =========================
+   Media Gallery
+========================= */
+.media-content-section {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    padding: 40px 20px;
+    color: #FFD700;
+}
+.portal-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #111;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    position: relative;
+}
+.portal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3);
+}
+.portal-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.portal-card:hover img {
+    transform: scale(1.05);
+}
+.portal-card .card-body {
+    background-color: rgba(0,0,0,0.85);
+    padding: 20px;
+    transition: background-color 0.4s ease;
+}
+.portal-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.portal-card .card-text {
+    font-size: 0.95rem;
+    color: #f1e09e;
+}
+
+/* =========================
+   Footer
+========================= */
+.custom-footer {
+    background-color: grey;
+    color: #FFD700;
+    padding: 60px 20px;
+    font-size: 0.9rem;
+}
+.footer-title { font-weight: bold; margin-bottom: 20px; font-size: 1.2rem; }
+.footer-links { list-style: none; padding: 0; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a:hover { color: white; }
+.social-link { margin-right: 15px; font-size: 1.3rem; }
+.social-link:hover { color: white; }
+.footer-divider { border-top: 1px solid #FFD700; margin: 30px 0 15px; }
+.footer-copy { font-size: 0.85rem; text-align: center; margin-top: 15px; }
+
+/* =========================
+   Media Queries
+========================= */
+@media (max-width: 1200px) {
+    .media-section { padding: 100px 60px 60px; }
+    .media-section .section-title2 { font-size: 2.8rem; }
+    .media-section .overview-text { font-size: 1.15rem; }
+}
+
+@media (max-width: 992px) {
+    .media-section { padding: 80px 40px 50px; }
+    .media-section .section-title2 { font-size: 2.5rem; }
+    .media-section .overview-text { font-size: 1.1rem; }
+    .portal-card img { height: 200px; }
+}
+
+@media (max-width: 768px) {
+    .media-section { padding: 80px 20px 40px; }
+    .media-section .section-title2 { font-size: 2rem; }
+    .media-section .overview-text { font-size: 1rem; }
+    .navbar-nav { text-align: center; }
+    .portal-card img { height: 180px; }
+}
+
+@media (max-width: 576px) {
+    .media-section { padding: 120px 15px 30px; }
+    .media-section .section-title2 { font-size: 1.8rem; }
+    .media-section .overview-text { font-size: 0.95rem; }
+    .portal-card img { height: 160px; }
+   .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .navbar-nav .nav-link {
+    margin: 3px 0;
+    font-size: 0.9rem;
+  }
+  .navbar-collapse {
+    background-color: grey;
+    padding: 10px 0;
+  }
+  .navbar-collapse .nav-link {
+    font-size: 0.95rem;
+  }
+  .navbar-toggler {
+    padding: 8px 12px;
+  }
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+}
+
+</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="ScieZoneIntellectaDefault.html">ScieZone Intellecta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaDefault.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaAboutUs.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaWhatWeAre.html">What We Are</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaWhatWeDo.html">What We Do</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaOurPeople.html">Our People</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ScieZoneIntellectaMedia.html">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaContactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- media Section -->
+ <section class="media-section">
+     <div class="container">
+         <h1 class="section-title2">Media</h1>
+         <p class="lead overview-text mx-auto" style="max-width:800px;">
+             Explore our latest news, updates, and media content that showcase the work and achievements of ScieZone Intellecta.
+         </p>
+     </div>
+ </section>
+
+
+ <!-- Media Gallery -->
+<section class="media-content-section">
+    <div class="container">
+        <h2 class="section-title2">Our Media Gallery</h2>
+
+        <div class="row g-4">
+            <!-- Media Item 1 -->
+            <div class="col-md-4">
+                <div class="card portal-card">
+                    <img src="https://source.unsplash.com/600x400/?technology,conference" class="card-img-top" alt="Media 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Project Launch</h5>
+                        <p class="card-text">Highlights from our recent project launch event.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Item 2 -->
+            <div class="col-md-4">
+                <div class="card portal-card">
+                    <img src="https://source.unsplash.com/600x400/?teamwork,meeting" class="card-img-top" alt="Media 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Team Workshop</h5>
+                        <p class="card-text">Snapshots from our collaborative knowledge workshops.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Item 3 -->
+            <div class="col-md-4">
+                <div class="card portal-card">
+                    <img src="https://source.unsplash.com/600x400/?community,education" class="card-img-top" alt="Media 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Community Outreach</h5>
+                        <p class="card-text">Our initiatives to support learning in the community.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Item 4 -->
+            <div class="col-md-4">
+                <div class="card portal-card">
+                    <img src="https://source.unsplash.com/600x400/?innovation,technology" class="card-img-top" alt="Media 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Innovation Lab</h5>
+                        <p class="card-text">Showcasing breakthroughs from our innovation lab sessions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Item 5 -->
+            <div class="col-md-4">
+                <div class="card portal-card">
+                    <img src="https://source.unsplash.com/600x400/?conference,event" class="card-img-top" alt="Media 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Annual Conference</h5>
+                        <p class="card-text">Highlights and key moments from our annual conference.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Item 6 -->
+            <div class="col-md-4">
+                <div class="card portal-card">
+                    <img src="https://source.unsplash.com/600x400/?education,learning" class="card-img-top" alt="Media 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Learning Programs</h5>
+                        <p class="card-text">Documenting our interactive learning sessions with participants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">ScieZone Intellecta</h5>
+          <p>We empower learners, educators, and professionals with technology-driven solutions. Bridging the gap between potential and opportunity through modern tools, collaboration, and shared knowledge.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="ScieZoneIntellectaDefault.html">Home</a></li>
+            <li><a href="ScieZoneIntellectaAboutUs.html">About Us</a></li>
+            <li><a href="ScieZoneIntellectaWhatWeAre.html">What We Are</a></li>
+            <li><a href="ScieZoneIntellectaWhatWeDo.html">What We Do</a></li>
+            <li><a href="ScieZoneIntellectaOurPeople.html">Our People</a></li>
+            <li><a href="ScieZoneIntellectaMedia.html">Media</a></li>
+            <li><a href="ScieZoneIntellectaContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Contact Us</h5>
+          <p>📍 2562, Thagadiepelajaang, Hartswater, Northern Cape, South Africa<br>📞 +27 11 123 4567<br>✉️ info@ScieZoneIntellecta.co.za</p>
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-copy">&copy; <span id="year"></span> ScieZone Intellecta. All rights reserved.</div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Highlight active nav link
+    const currentPage = window.location.pathname.split("/").pop();
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+      if (link.getAttribute("href") === currentPage) link.classList.add("active");
+    });
+
+    // Shrink navbar on scroll
+    const navbar = document.querySelector(".navbar");
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("navbar-shrink", window.scrollY > 50);
+    });
+
+    // Dynamic Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      fadeItems.forEach(item => {
+        if (item.getBoundingClientRect().top < triggerBottom) item.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScieZone Intellecta - About Us</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+    /* =========================
+   Global Theme: Black & Gold
+========================= */
+body {
+  background-color: #000;
+  color: #FFD700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+h1, h2, h3, h5 {
+  color: #FFD700;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #FFD700;
+  transition: 0.3s;
+}
+a:hover {
+  color: #fff;
+}
+
+/* =========================
+   Navbar
+========================= */
+.navbar {
+  background-color: grey;
+  padding: 15px 0;
+  transition: 0.3s;
+}
+.navbar-brand {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.navbar-nav .nav-link {
+  color: #FFD700;
+  margin: 0 10px;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #fff;
+  font-weight: bold;
+}
+.navbar-shrink {
+  padding: 5px 0;
+  background: rgba(0, 0, 0, 0.95);
+}
+.navbar-toggler {
+  border: 2px solid #FFD700;
+  background-color: #000;
+  margin-bottom: 10px;
+
+
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='gold' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") center/cover;
+  color: #FFD700;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #f1e09e;
+  max-width: 700px;
+}
+
+/* =========================
+   Section Title
+========================= */
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 60px 0 40px;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #FFD700;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* =========================
+   Company Story
+========================= */
+.story {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  padding: 60px 10%;
+}
+.story img {
+  flex: 1 1 400px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(255,215,0,0.25);
+}
+.story-text {
+  flex: 1 1 400px;
+}
+.story-text p {
+  line-height: 1.8;
+  color: #f8d64f;
+}
+
+/* =========================
+   Mission & Vision
+========================= */
+.about-grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
+  gap: 60px;             /* increased gap between the items */
+  justify-content: center; 
+  max-width: 900px;      
+  margin: 0 auto; 
+  padding: 60px 10%;       
+}
+
+.about-item1 {
+  background: rgba(255, 215, 0, 0.05);
+  border-left: 4px solid #FFD700;
+  padding: 30px 25px;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(39, 33, 2, 0.15);
+  text-align: center; /* center content inside each card */
+}
+
+.about-item1:hover {
+  background: rgba(255, 215, 0, 0.15);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(255, 215, 0, 0.25);
+}
+
+.about-heading1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.about-heading1::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #FFD700;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.about-text1 {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #f8d64f;
+}
+.about-item:nth-child(1) {
+  order: 1;
+  margin-bottom: 10px;
+}
+.about-item:nth-child(2) {
+  order: 2;
+}
+.about-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   Team Section
+========================= */
+.team {
+  background: #111;
+  padding: 60px 10%;
+  text-align: center;
+}
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.team-member {
+  background: rgba(255,215,0,0.05);
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s;
+}
+.team-member:hover {
+  background: rgba(255,215,0,0.15);
+  transform: translateY(-5px);
+}
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #FFD700;
+  margin-bottom: 15px;
+}
+.team-member p {
+  font-size: 0.9rem;
+  color: #f1e09e;
+}
+
+/* =========================
+   CTA
+========================= */
+.cta {
+  background: linear-gradient(135deg, #FFD700, #b8860b);
+  color: #000;
+  text-align: center;
+  padding: 70px 20px;
+}
+.cta a {
+  display: inline-block;
+  background: #000;
+  color: #FFD700;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.cta a:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* =========================
+   Footer
+========================= */
+.custom-footer {
+  background-color: grey;
+  color: #FFD700;
+  padding: 60px 20px;
+  font-size: 0.9rem;
+}
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a:hover {
+  color: white;
+}
+.social-link {
+  margin-right: 15px;
+  font-size: 1.3rem;
+}
+.social-link:hover {
+  color: white;
+}
+.footer-divider {
+  border-top: 1px solid #FFD700;
+  margin: 30px 0 15px;
+}
+.footer-copy {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* =========================
+   Responsive Fixes (≤768px)
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 20px;
+    height: auto;
+  }
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1rem; }
+
+  .story {
+    padding: 60px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .story img,
+  .team-member img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team {
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .team img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+
+  .about-grid1 {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 30px;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .about-item1 {
+    padding: 25px 20px;
+    flex: 1 1 100%;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 0;
+  }
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  .about-grid1 {
+    gap: 20px;
+  }
+  .about-item1 {
+    padding: 20px 15px;
+  }
+  .about-heading1 {
+    font-size: 1.5rem;
+  }
+  .about-text1 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .navbar-nav .nav-link {
+    margin: 3px 0;
+    font-size: 0.9rem;
+  }
+  .navbar-collapse {
+    background-color: grey;
+    padding: 10px 0;
+  }
+  .navbar-collapse .nav-link {
+    font-size: 0.95rem;
+  }
+  .navbar-toggler {
+    padding: 8px 12px;
+  }
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .footer-title {
+    font-size: 1rem;
+  }
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  .social-link {
+    font-size: 1.1rem;
+  }
+}
+  
+
+
+/* =========================
+   Responsive Adjustments
+========================= */
+@media (max-width: 991.98px) {
+  .custom-footer {
+    text-align: center;
+  }
+  .custom-footer .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .custom-footer .col-md-4 {
+    flex: 1 1 100%;
+    max-width: 500px;
+  }
+  .social-link {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+      body {
+    padding-top: 0;
+  }
+  .about-grid1 {
+    gap: 20px;
+  }
+    .about-item1 {
+    padding: 20px 15px;
+  }
+
+  .about-heading1 {
+    font-size: 1.5rem;
+  }
+
+  .about-text1 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .navbar-nav .nav-link {
+    margin: 3px 0;
+    font-size: 0.9rem;
+  }
+  .navbar-collapse {
+    background-color: grey;
+    padding: 10px 0;
+  }
+  .navbar-collapse .nav-link {
+    font-size: 0.95rem;
+  }
+  .navbar-toggler {
+    padding: 8px 12px;
+  }
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .footer-title {
+    font-size: 1rem;
+  }
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  .social-link {
+    font-size: 1.1rem;
+  }
+}
+</style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="ScieZoneIntellectaDefault.html">ScieZone Intellecta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaDefault.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ScieZoneIntellectaAboutUs.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaWhatWeAre.html">What We Are</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaWhatWeDo.html">What We Do</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaOurPeople.html">Our People</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaMedia.html">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="ScieZoneIntellectaContactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>About Us</h1>
+    <p>
+      ScieZone Intellecta is an independently operated and managed, black-empowered content producer,
+      bringing innovative ideas to life from Phokwane Local Municipality.
+    </p>
+  </section>
+
+  <!-- Company Story -->
+  <section class="story">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Our Story">
+    <div class="story-text">
+      <h2>Our Story</h2>
+      <p>
+        Founded with a vision to empower communities through media and technology,
+        ScieZone Intellecta has evolved into one of the most dynamic producers in the region.
+        Our team combines creativity, innovation, and resilience to deliver impactful solutions
+        that inspire and inform.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <h2 class="section-title">Mission & Vision</h2>
+  <section class="about-grid1">
+    <div class="about-item1">
+      <h3 class="about-heading1">Our Mission</h3>
+      <p class="about-text1">
+        To create authentic, compelling, and transformative content that connects people and communities.
+      </p>
+    </div>
+    
+    <div class="about-item1">
+      <h3 class="about-heading1">Our Vision</h3>
+      <p class="about-text1">
+        To be Africa’s most trusted and innovative content producer,
+        empowering voices and shaping stories that matter.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <h2 class="section-title">Meet Our People</h2>
+  <section class="team">
+    <div class="team-members">
+      <div class="team-member">
+        <img src="#" alt="Team Member">
+        <h4>Pulenyana Gaowelwe</h4>
+        <p>Founder & Director</p>
+      </div>
+      <div class="team-member">
+        <img src="#" alt="Team Member">
+        <h4>Pule Gaowelwe</h4>
+        <p>Director</p>
+      </div>
+      <div class="team-member">
+        <img src="#" alt="Team Member">
+        <h4>Puleng Gaowelwe</h4>
+        <p>Director</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Let’s Build Something Great Together</h2>
+    <a href="ScieZoneIntellectaContactUs.html">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+ <footer class="custom-footer">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">ScieZone Intellecta</h5>
+          <p>
+            ScieZone Intellecta is a platform where innovation meets knowledge.  
+            We empower learners, educators, and professionals with technology-driven solutions.  
+            Our aim is to bridge the gap between potential and opportunity through  
+            modern tools, collaboration, and shared knowledge.
+          </p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="ScieZoneIntellectaDefault.html">Home</a></li>
+            <li><a href="ScieZoneIntellectaAboutUs.html">About Us</a></li>
+            <li><a href="ScieZoneIntellectaWhatWeAre.html">What We Are</a></li>
+            <li><a href="ScieZoneIntellectaWhatWeDo.html">What We Do</a></li>
+            <li><a href="ScieZoneIntellectaOurPeople.html">Our People</a></li>
+            <li><a href="ScieZoneIntellectaMedia.html">Media</a></li>
+            <li><a href="ScieZoneIntellectaContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Contact Us</h5>
+          <p>
+            📍 2562, Thagadiepelajaang, Hartswater, Northern Cape, South Africa<br>
+            📞 +27 11 123 4567<br>
+            ✉️ info@ScieZoneIntellecta.co.za
+          </p>
+          <a href="https://facebook.com/" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-copy">&copy; <span id="year"></span> ScieZone Intellecta. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Highlight active nav link
+    const currentPage = window.location.pathname.split("/").pop();
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+
+    // Shrink navbar on scroll
+    const navbar = document.querySelector(".navbar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("navbar-shrink");
+      } else {
+        navbar.classList.remove("navbar-shrink");
+      }
+    });
+
+    // Dynamic Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
